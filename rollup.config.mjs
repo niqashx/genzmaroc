@@ -5,9 +5,10 @@ import { babel } from "@rollup/plugin-babel";
 
 
 export default {
+  
   input: "assets/js/main.js", // Entry point
   output: {
-    file: "_site/assets/js/bundle.js", // Output for Jekyll
+    file: 'assets/js/bundle.js', // Output to source assets (not _site)
     format: "iife", // Browser-compatible
     name: "app", // Optional global var
   },
