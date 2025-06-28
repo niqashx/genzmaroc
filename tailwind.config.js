@@ -7,7 +7,8 @@ export default {
     
     // Content
     "./_posts/**/*.md",
-    "./*.md", // Root markdown files
+    "./*.{html,md,liquid}", // Root markdown files
+
     
     // JavaScript (for Alpine.js)
     "./assets/js/**/*.js",

@@ -8,7 +8,11 @@
     "build": "run-s build:css build:js build:jekyll",
     "build:css": "tailwindcss -i ./assets/css/input.css -o ./_site/assets/css/main.css --minify",
     "build:js": "rollup -c rollup.config.mjs",
-    "build:jekyll": "bundle exec jekyll build"
+    "build:jekyll": "bundle exec jekyll build",
+    "clean": "rm -rf _site assets/css/main.css assets/js/bundle.js",
+    "start": "npm run dev",
+    "predeploy": "npm run build",
+    "test:yaml": "yamllint _data/navigation.yml"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",

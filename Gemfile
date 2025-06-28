@@ -10,3 +10,4 @@ end
 
 # Performance optimization (optional)
 gem "jekyll-minifier"  # HTML/CSS/JS minification
+# gem "jekyll-markdown"
