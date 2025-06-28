@@ -1,4 +1,17 @@
-.bundle
-node_modules
-_site
-.jekyll-cache
+# Dependency directories
+node_modules/
+.sass-cache/
+.jekyll-cache/
+
+# Build output
+_site/
+.DS_Store
+
+# Environment files
+.env
+.env.local
+
+# Ruby/Bundler files
+vendor/
+.bundle/
+Gemfile.lock
