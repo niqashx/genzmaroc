@@ -1,9 +1,13 @@
 ---
 
 layout: default
-title: Home
-description: des is gonna be here
+title: "GENZ Morocco - Home"
+# permalink: /backup
+
+description: i ll see what i ll write here
 
 ---
 
- {% include hero.html %}
+ {% include hero-backup.html %}
+ {% include footer.html %}
+
