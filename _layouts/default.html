@@ -26,8 +26,21 @@
       sizes="16x16"
       href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <meta name="description" content="مجتمع GenZ212 و GenZ25 - الديسكورد المغربي للشباب. حرية التعبير المطلقة، مقالات سياسية، ونقاشات حرة.">
+    <meta name="keywords" content="genz212, genz25, genz maroc, discord maroc, مجتمع مغربي">
     <meta name="description" content="{{ page.description | default: site.description }}" />
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "GenZMaroc",
+        "alternateName": ["GenZ212", "GenZ25"],
+        "url": "{{ site.url }}",
+        "description": "مجتمع GenZ212 و GenZ25 - الديسكورد المغربي للشباب"
+      }
+    </script>
   </head>
   <body>
     {% include header.html %}

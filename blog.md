@@ -5,9 +5,9 @@ permalink: /blog/
 ---
 
 <div class="container mx-auto px-4 py-12 max-w-6xl">
-  <h1 class="text-4xl font-bold mb-12 text-center md:text-left">Últimos Artículos</h1>
+  <h1 class="text-4xl font-bold mb-12 text-center md:text-right" >مقالات في </h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-right">
     {% for post in site.posts %}
       <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
         <a href="{{ post.url }}" class="block h-full">
