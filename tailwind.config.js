@@ -1,17 +1,27 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    // Jekyll templates
+    "./_layouts/**/*.{html,liquid}",
+    "./_includes/**/*.{html,liquid}",
+    
+    // Content
+    "./_posts/**/*.md",
+    "./*.{html,md,liquid}", // Root markdown files
 
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
-
-body {
-  font-family: 'Tajawal', sans-serif;
-}
-
-.discord-card {
-  transition: all 0.3s ease;
-}
-
-.discord-card:hover {
-  transform: translateY(-5px);
+    
+    // JavaScript (for Alpine.js)
+    "./assets/js/**/*.js",
+    
+    // Important root files
+    "./*.html",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'sans': ['Tajawal', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
 }
