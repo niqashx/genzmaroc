@@ -1,0 +1,53 @@
+/* assets/css/styles.css */
+
+/* RTL Support - Apply only to specific elements, not the entire body */
+.rtl-content {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Apply RTL only to Arabic text elements */
+[dir="rtl"] {
+  text-align: right;
+}
+
+/* But keep the navigation LTR */
+nav {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Ensure nav items stay LTR */
+nav .flex.space-x-8 {
+  direction: ltr;
+}
+
+/* RTL adjustments for content only */
+.rtl-content h1,
+.rtl-content h2,
+.rtl-content h3,
+.rtl-content h4,
+.rtl-content h5,
+.rtl-content h6 {
+  text-align: right;
+  font-weight: 700;
+}
+
+.rtl-content p {
+  text-align: right;
+  line-height: 1.8;
+}
+
+.rtl-content .post-meta {
+  text-align: right;
+}
+
+/* Remove global RTL styles that affect the nav */
+body.rtl {
+  /* Remove any global RTL that breaks the nav */
+}
+
+/* Ensure nav container stays LTR */
+.max-w-7xl.mx-auto.flex {
+  direction: ltr;
+}

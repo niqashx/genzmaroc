@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "concurrently \"npm run dev:css\" \"npm run dev:js\" \"bundle exec jekyll serve\"",
-    "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind-output.css --watch",
     "dev:js": "rollup -c rollup.config.mjs --watch",
     "build": "run-s build:css build:js build:jekyll",
-    "build:css": "tailwindcss -i ./assets/css/input.css -o ./_site/assets/css/main.css --minify",
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./_site/assets/css/tailwind-output.css --minify",
     "build:js": "rollup -c rollup.config.mjs",
     "build:jekyll": "bundle exec jekyll build",
     "clean": "rm -rf _site assets/css/main.css assets/js/bundle.js",

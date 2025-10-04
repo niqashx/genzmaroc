@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Blog
+title: المدونة
 permalink: /blog/
 ---
 
-<div class="container mx-auto px-4 py-12 max-w-6xl">
-  <h1 class="text-4xl font-bold mb-12 text-center md:text-right" >مقالات في </h1>
+<div class="container mx-auto px-4 py-12 max-w-6xl rtl-content">
+  <h1 class="text-4xl font-bold mb-12 text-center md:text-right">المدونة</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-right">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {% for post in site.posts %}
-      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 text-right">
         <a href="{{ post.url }}" class="block h-full">
           {% if post.image %}
             <img 
@@ -21,13 +21,13 @@ permalink: /blog/
               class="w-full h-48 object-cover">
           {% endif %}
           <div class="p-6">
-            <h2 class="text-xl font-semibold mb-2 text-gray-800 hover:text-blue-600 transition-colors">
+            <h2 class="text-xl font-semibold mb-2 text-gray-800 hover:text-blue-600 transition-colors text-right">
               {{ post.title }}
             </h2>
-            <p class="text-gray-600 mb-4 line-clamp-3">
+            <p class="text-gray-600 mb-4 line-clamp-3 text-right">
               {{ post.excerpt | strip_html | truncatewords: 25 }}
             </p>
-            <time class="text-sm text-gray-500">
+            <time class="text-sm text-gray-500 block text-right">
               {{ post.date | date: "%d %B, %Y" }}
             </time>
           </div>
