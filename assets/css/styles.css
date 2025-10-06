@@ -29,12 +29,12 @@ nav .flex.space-x-8 {
 .rtl-content h4,
 .rtl-content h5,
 .rtl-content h6 {
-  text-align: right;
+  /* text-align: right; */
   font-weight: 700;
 }
 
 .rtl-content p {
-  text-align: right;
+  /* text-align: right; */
   line-height: 1.8;
 }
 
