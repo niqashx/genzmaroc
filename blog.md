@@ -1,7 +1,7 @@
 ---
 layout: default
 title: المدونة
-permalink: /blog/
+permalink: /مقالات/
 ---
 
 <div class="container mx-auto px-4 py-12 max-w-6xl rtl-content">
