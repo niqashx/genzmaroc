@@ -36,12 +36,12 @@ permalink: /مقالات/
         
         <!-- Date and category section - NOT part of the link -->
         <div class="mt-auto p-6 pt-0">
-          <div class="flex justify-between items-center border-t pt-4">
-            <time class="text-sm text-gray-500">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-t pt-4 space-y-2 sm:space-y-0">
+            <time class="text-sm text-gray-500 text-right sm:text-right">
               {{ post.date | date: "%d %B, %Y" }}
             </time>
             {% if post.categories %}
-              <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+              <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded text-right sm:text-right">
                 {{ post.categories[0] }}
               </span>
             {% endif %}
