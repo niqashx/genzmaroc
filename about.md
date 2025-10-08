@@ -4,7 +4,7 @@ title: "من نحن"
 description: "جيل زد ماروك - المركز الرئيسي لمجتمعات الجيل زد المغربية. حرية التعبير المطلقة والمنصة الموحدة للسيرفرات المغربية."
 permalink: /من-نحن/
 ---
-
+```html
 <section class="max-w-3xl mx-auto px-4 py-8 rtl-content">
     <div class="bg-white p-6 rounded-lg shadow-md">
         <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">GenZMaroc</h1>
