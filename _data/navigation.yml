@@ -1,18 +1,19 @@
 # _data/navigation.yml
 header:
-  - name: "Blog"
-    url: "/blog"
-    icon: "📝"  # Optional emoji/icon
-  - name: "Subscribe"
-    url: "/subscribe"
-    icon: "✉️"
-  - name: "About"
-    url: "/about"
-  - name: "Contact"
-    url: "/contact"
-    highlight: true  # Optional flag for styled buttons
+  - name: "مقالات"
+    url: "/مقالات"
+    icon: "📝"
+  - name: "Discord"
+    url: "https://discord.gg/genz25"
+    icon: "🎮"
+    external: true
+    highlight: true
 
 footer:
+  - name: "من نحن"
+    url: "/من-نحن"
+  - name: "للتواصل"
+    url: "/للتواصل"
   - name: "Privacy Policy"
     url: "/privacy"
   - name: "Terms"

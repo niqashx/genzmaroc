@@ -1,9 +1,18 @@
-<footer class="bg-gray-900 text-white py-8 ">
+<footer class="bg-gray-900 text-white py-8">
     <div class="max-w-6xl mx-auto px-4 text-center">
         <!-- Message -->
-        <p class="text-lg mb-4 text-gray-300">
+        <p class="text-lg mb-6 text-gray-300">
             نسعى لبناء مغرب أفضل
         </p>
+        
+        <!-- Footer Links -->
+        <div class="flex flex-wrap justify-center gap-6 mb-6">
+            {% for item in site.data.navigation.footer %}
+                <a href="{{ item.url }}" class="text-gray-400 hover:text-white transition-colors duration-200">
+                    {{ item.name }}
+                </a>
+            {% endfor %}
+        </div>
         
         <!-- Copyright -->
         <div class="border-t border-gray-700 pt-4">

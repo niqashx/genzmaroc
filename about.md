@@ -5,11 +5,11 @@ description: "جيل زد ماروك - المركز الرئيسي لمجتمع�
 permalink: /من-نحن/
 ---
 
-<section class="about-content max-w-3xl mx-auto px-4 py-8">
-    <div class="bg-white p-6">
-        <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center"> GenZMaroc</h1>
+<section class="max-w-3xl mx-auto px-4 py-8 rtl-content">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">GenZMaroc</h1>
         
-        <div class="space-y-4 text-gray-700 leading-loose text-right">
+        <div class="space-y-4 text-gray-700 leading-loose">
             <p>
                 <strong class="text-blue-600">GenZMaroc</strong> هو مجتمع رقمي يؤمن <strong class="text-red-600">بحُرية التعبير المُطلقة</strong> بدون أي قيود. نعمل كمركز رئيسي يُوحد السيرفرات المغربية على الديسكورد.
             </p>
@@ -22,7 +22,6 @@ permalink: /من-نحن/
                     هذا الضمان لاستمرارية التواصل ضروري لأن هذه السيرفرات ملك للمغاربة الذين لديهم رغبة حقيقية في التغيير.
                 </p>
             </div>
-
 
             <p class="border-r-4 border-blue-500 pr-4 bg-blue-50 py-3 rounded">
                 نرفض الرقابة والتلقين، ونؤمن بالحوار المفتوح والنقاش الحر. هنا مساحة للفكر الجريء والكلمة الصادقة.
