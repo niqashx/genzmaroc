@@ -1,24 +1,41 @@
 <footer class="bg-gray-900 text-white py-8">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-        <!-- Message -->
-        <p class="text-lg mb-6 text-gray-300">
-            نسعى لبناء مغرب أفضل
-        </p>
-        
-        <!-- Footer Links -->
-        <div class="flex flex-wrap justify-center gap-6 mb-6">
-            {% for item in site.data.navigation.footer %}
-                <a href="{{ item.url }}" class="text-gray-400 hover:text-white transition-colors duration-200">
-                    {{ item.name }}
-                </a>
-            {% endfor %}
-        </div>
-        
-        <!-- Copyright -->
-        <div class="border-t border-gray-700 pt-4">
-            <p class="text-sm text-gray-400">
-                &copy; 2025 GenZMaroc. جميع الحقوق محفوظة.
-            </p>
-        </div>
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <!-- Message -->
+    <p class="text-lg mb-6 text-gray-300">
+      نسعى لبناء مغرب أفضل
+    </p>
+
+    <!-- Footer Links -->
+    <div class="flex flex-wrap justify-center gap-6 mb-6">
+      {% for item in site.data.navigation.footer %}
+        <a href="{{ item.url }}" class="text-gray-400 hover:text-white transition-colors duration-200">
+          {{ item.name }}
+        </a>
+      {% endfor %}
     </div>
+
+    <!-- Footer -->
+    <div class="border-t border-gray-700 pt-4">
+      <div class="text-sm text-gray-400 text-center space-y-2">
+        <div>
+          ✨ صنع من قبل
+          <a
+            href="https://www.youtube.com/ni9ash"
+            target="_blank"
+            class="text-blue-400 hover:text-blue-300 transition-colors font-medium">
+            نقاش
+          </a>
+        </div>
+        <div>
+          🚀 نبدع في تصميم المواقع -
+          <a href="/للتواصل" class="text-blue-400 hover:text-blue-300 transition-colors font-medium">
+            ابدأ مشروعك الآن
+          </a>
+        </div>
+        <div class="text-xs text-gray-500">
+          GenZMaroc 2025 - صوت الشباب، مستقبل المغرب
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
