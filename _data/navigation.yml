@@ -3,6 +3,8 @@ header:
   - name: "مقالات"
     url: "/مقالات"
     icon: "📝"
+  - name: "البرنامج السياسي"
+    url: "/الحكومة-المؤقتة"
   - name: "Discord"
     url: "https://discord.gg/genz25"
     icon: "🎮"
