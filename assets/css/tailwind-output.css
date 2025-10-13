@@ -622,6 +622,10 @@ video {
   z-index: 50;
 }
 
+.m-8{
+  margin: 2rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -630,11 +634,6 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mb-12{
@@ -687,14 +686,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.mb-0{
-  margin-bottom: 0px;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .line-clamp-3{
@@ -908,6 +899,10 @@ video {
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-r-4{
   border-right-width: 4px;
 }
@@ -953,6 +948,10 @@ video {
 .border-yellow-200{
   --tw-border-opacity: 1;
   border-color: rgb(254 240 138 / var(--tw-border-opacity, 1));
+}
+
+.border-white\/30{
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-\[\#5865F2\]{
@@ -1023,6 +1022,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-purple-700{
+  --tw-gradient-from: #7e22ce var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(126 34 206 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-pink-500{
   --tw-gradient-to: rgb(236 72 153 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #ec4899 var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1030,6 +1035,10 @@ video {
 
 .to-pink-500{
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.to-pink-600{
+  --tw-gradient-to: #db2777 var(--tw-gradient-to-position);
 }
 
 .to-red-500{
@@ -1115,6 +1124,16 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pr-4{
@@ -1430,6 +1449,10 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-white\/50:hover{
+  border-color: rgb(255 255 255 / 0.5);
+}
+
 .hover\:bg-\[\#4752c4\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(71 82 196 / var(--tw-bg-opacity, 1));
@@ -1447,6 +1470,21 @@ body {
 
 .hover\:bg-white\/10:hover{
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:from-purple-800:hover{
+  --tw-gradient-from: #6b21a8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(107 33 168 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-pink-700:hover{
+  --tw-gradient-to: #be185d var(--tw-gradient-to-position);
 }
 
 .hover\:text-blue-300:hover{

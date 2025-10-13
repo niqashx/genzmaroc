@@ -28,5 +28,17 @@ layout: default
         ابق على اتصال مع مجتمع GenZMaroc من خلال قنواتنا البديلة .
       </p>
     </div>
+
+    <!-- البرنامج السياسي -->
+
+<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mx-auto text-center border border-white/20 my-8">
+  <a href="/الحكومة-المؤقتة/" class="block bg-gray-800 hover:bg-gray-900 text-white text-xl font-bold py-5 px-8 rounded-lg shadow-2xl transition-all duration-300 border-2 border-white/30 hover:border-white/50">
+    📋 البرنامج السياسي للحكومة المؤقتة لعلي أملو
+  </a>
+  <p class="text-sm opacity-90 mt-4 text-white leading-relaxed">
+    التعديل والتحيين مقبول من طرف كل من بامكانه المساهمة<br>لتجسيد العدالة والديمقراطية في المغرب
+  </p>
+</div>
+    
   </div>
 </section>
