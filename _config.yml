@@ -7,6 +7,20 @@ plugins:
 minify:
   remove_comments: true
   compress_js: true
-  title: "GenZMaroc - GenZ212 | GenZ25 | مجتمع الجيل المغربي"
+
+title: "GenZMaroc - GenZ212 | GenZ25 | مجتمع الجيل المغربي"
 description: "انضم إلى GenZ212 و GenZ25 - مجتمع الديسكورد المغربي للشباب. حرية التعبير المطلقة، مقالات سياسية، ونقاشات حرة."
 keywords: "genz212, genz25, genz maroc, مجتمع مغربي, ديسكورد مغربي, الجيل زد المغرب"
+
+# ADD THESE LINES:
+include:
+  - assets/css/tailwind-output.css
+
+exclude:
+  - node_modules/
+  - tailwind.config.js
+  - package.json
+  - package-lock.json
+  - src/
+  - .github/
+  
