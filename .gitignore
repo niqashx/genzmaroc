@@ -15,5 +15,3 @@ _site/
 vendor/
 .bundle/
 Gemfile.lock
-
-assets/css/tailwind-output.css
