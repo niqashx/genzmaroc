@@ -21,9 +21,7 @@
             {{ item.name }}
           </a>
         {% else %}
-          <a
-            href="{{ item.url }}"
-            class="{% if item.highlight %}bg-white text-purple-600 hover:bg-gray-100 px-4 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-md{% else %}hover:text-white/80 transition-colors duration-200 font-medium{% endif %}">
+          <a href="{{ item.url }}" class="{% if item.highlight %}bg-white text-purple-600 hover:bg-gray-100 px-4 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-md{% else %}hover:text-white/80 transition-colors duration-200 font-medium{% endif %}">
             {{ item.name }}
           </a>
         {% endif %}
@@ -48,7 +46,11 @@
       </svg>
     </button>
   </div>
-
+  <!-- Transparent Black Overlay -->
+  <div
+    x-show="open"
+    class="md:hidden fixed inset-0 bg-black/70 z-40"
+    @click="open = false"></div>
   <!-- Mobile menu content -->
   <div
     x-show="open"
