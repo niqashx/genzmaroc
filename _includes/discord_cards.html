@@ -1,31 +1,41 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
   {% for server in site.data.discord_servers %}
-  <div class="discord-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-    <div class="mb-4">
-      <h3 class="text-2xl font-bold mb-2">{{ server.title }}</h3>
-      <p class="text-sm opacity-90 mb-4 text-right">
-        {{ server.description }}
-      </p>
-    </div>
-    <a
-      href="{{ server.invite_url }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="w-full inline-flex items-center justify-center bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-      <svg
-        class="w-5 h-5 ml-2"
-        fill="currentColor"
-        viewBox="0 0 24 24">
-        <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.25c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-.99 0-1.8-.9-1.8-2.02s.8-2.02 1.8-2.02c1 0 1.8.9 1.8 2.02s-.8 2.02-1.8 2.02zm6.97 0c-.99 0-1.8-.9-1.8-2.02s.8-2.02 1.8-2.02c.99 0 1.8.9 1.8 2.02s-.81 2.02-1.8 2.02z" />
-      </svg>
-      {{ server.button_text }}
-    </a>
-    <div class="mt-4 bg-gray-800 rounded-lg p-3 border border-gray-600 text-center">
-      <p class="text-xs text-gray-300 mb-2">أو يمكنك نسخ الرابط يدوياً:</p>
-      <div class="bg-gray-900 rounded px-3 py-2">
-        <code class="text-green-400 font-mono text-sm select-all">{{ server.invite_code }}</code>
+    <div class="discord-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold mb-2">{{ server.title }}</h3>
+        <p class="text-sm opacity-90 mb-4 text-right">
+          {{ server.description }}
+        </p>
+      </div>
+      <a
+        href="{{ server.invite_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full inline-flex items-center justify-center bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <svg
+          class="w-5 h-5 ml-2"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.25c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-.99 0-1.8-.9-1.8-2.02s.8-2.02 1.8-2.02c1 0 1.8.9 1.8 2.02s-.8 2.02-1.8 2.02zm6.97 0c-.99 0-1.8-.9-1.8-2.02s.8-2.02 1.8-2.02c.99 0 1.8.9 1.8 2.02s-.81 2.02-1.8 2.02z" />
+        </svg>
+        {{ server.button_text }}
+      </a>
+      <div class="mt-4 bg-gray-800 rounded-lg p-3 border border-gray-600 text-center">
+        <p class="text-xs text-gray-300 mb-2">أو يمكنك نسخ الرابط يدوياً:</p>
+       
+      <div 
+  class="bg-gray-900 rounded px-3 py-2 cursor-pointer active:bg-gray-800 transition-colors flex items-center justify-between gap-3"
+  onclick="navigator.clipboard.writeText('{{ server.invite_code }}')"
+>
+  <code class="text-green-400 font-mono text-sm select-all flex-1">{{ server.invite_code }}</code>
+  <!-- Copy Icon -->
+  <svg class="w-3.5 h-3.5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+  </svg>
+</div>
+      
+
       </div>
     </div>
-  </div>
   {% endfor %}
 </div>
